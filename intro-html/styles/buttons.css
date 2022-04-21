@@ -1,0 +1,84 @@
+
+.subscribe-button {
+background-color: rgb(204, 0, 0);
+color: white;
+border: none;
+border-radius: 2px;
+cursor: pointer;
+margin-right: 8px;
+/* transition effect: takes whatever the effect you want to transit */
+transition: opacity 0.15s;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:16px;
+padding-right:16px;
+vertical-align: top;
+}
+
+/* hover effect */
+.subscribe-button:hover{
+/* opacity takes value[0 , 1]
+value is larger: color is stronger
+value is smaller: color is weaker
+*/
+opacity: 0.8;
+}
+/* the effect when click the button */
+.subscribe-button:active{
+opacity: 0.5;
+}
+
+.join-button {
+background-color:white;
+border-color: rgb(103, 103, 234);
+border-style: solid;
+border-width: 1px;
+color:rgb(103, 103, 234);
+border-radius: 2px;
+cursor: pointer;
+transition: background-color 0.15s, color 0.15s ;
+padding-top:9px;
+padding-bottom:9px;
+padding-left:16px;
+padding-right:16px;
+/* vertical-align: top; */
+}
+
+.join-button:hover{
+background-color:rgb(103, 103, 234) ;
+color: white;
+}
+.join-button:active{
+opacity: 0.5;
+}
+
+
+.tweet-button {
+background-color:rgb(29, 155, 240);
+padding-top:10px;
+padding-bottom:10px;
+padding-left:18px;
+padding-right:18px;
+color: white;
+border: none;
+border-radius: 18px;
+font-weight: bold;
+font-size: 15px;
+cursor: pointer;
+margin-left: 8px ;
+transition: box-shadow 0.15s;
+vertical-align: top;
+
+}
+
+.tweet-button:hover{
+/* shadow effect */
+/* takes 4 values: 
+    horizontal coord,
+    vertical coord,
+    blur intensity，
+    shadow color
+    */
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15) ; /*rgba: first three values are rgb colors,  the last value is the color intensity*/
+
+}

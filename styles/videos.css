@@ -1,0 +1,139 @@
+.thumbnail{
+    width: 100%;
+}
+
+.youtube-avater{
+    width: 80%;
+    border-radius: 50px;
+}
+
+
+.thumbnail-div{
+    margin-bottom: 10px; 
+    position: relative;
+}
+
+.video-time{
+    font-size: 12px;
+    font-weight: 500;
+
+    /* add padding to all four direction */
+    padding: 4px;
+
+    /* add padding clockwise from top, e.g:
+    
+    (top, right, bottom, left)
+    
+    */
+    /* padding: 4px 4px 4px 4px; */
+
+
+    /* padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px; */
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
+
+
+
+.youtube-title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.youtube-author{
+    font-size: 12px;
+    color:rgb(96, 96, 96);
+    margin-bottom: 5px;
+}
+
+
+/* Exercise 16 d */
+.profile-picture-container{
+    position: relative;
+}
+
+.youtube-avater-tooptip{
+    background-color: white;
+    width: 250px;
+    border-radius: 5px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3) ;
+    transition: opacity 0.25s;
+    /* z-index: 300; */
+}
+
+.profile-picture-container:hover .youtube-avater-tooptip{
+    opacity: 1;
+}
+
+.youtube-avater-tooptip-picture{
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 15px;
+    margin-left: 10px;
+  
+}
+
+.youtube-avater-tooptip-Author {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .youtube-avater-tooptip-subscribers {
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+
+.youtube-stats{
+    font-size: 12px;
+    color:rgb(96, 96, 96);
+}
+
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    
+}
+
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+
+@media (max-width: 750px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+@media (min-width: 751px) and (max-width: 999px) {
+.video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+}
+  
+  @media (min-width: 1000px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
